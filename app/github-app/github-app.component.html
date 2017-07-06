@@ -1,0 +1,23 @@
+<div infinite-scroller scroll-buffer="100px" on-scroll-end="$ctrl.loadMoreIssues()" disabled="$ctrl.isDisabled">
+    <div>
+        Top 5 JavaScript Repos:
+        <github-repo-select repos="$ctrl.repos"
+                            selected-repo="$ctrl.selectedRepo"
+                            on-repo-select="$ctrl.changeRepo(repo)">
+        </github-repo-select>
+    </div>
+
+    <div>
+        <github-repo-stats repo="$ctrl.selectedRepo" total-issues="$ctrl.total_issues"></github-repo-stats>
+    </div>
+
+    <div>
+        <github-issues-toolbar on-filter="$ctrl.filterIssues(selectedFilter)"
+                               on-sort="$ctrl.sortIssues(selectedSort)">
+        </github-issues-toolbar>
+    </div>
+
+    <div>
+        <github-issues-listing issues="$ctrl.issues"></github-issues-listing>
+    </div>
+</div>

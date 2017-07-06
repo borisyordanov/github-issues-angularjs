@@ -1,0 +1,9 @@
+<h2>
+    <p>Name: {{ $ctrl.repo.name || 'No Repository Selected' }}</p>
+    <p>Forks: {{ $ctrl.repo.forks || 'N/A'}}</p>
+    <p>Watchers: {{ $ctrl.repo.watchers || 'N/A'}}</p>
+    <p>Stars: {{ $ctrl.repo.stars || 'N/A'}}</p>
+    <p>Total issues: {{ $ctrl.totalIssues || 'N/A'}}</p>
+    <p>Open issues: {{ $ctrl.repo.openIssues || 'N/A'}}</p>
+    <p>Closed issues: {{ $ctrl.totalIssues - $ctrl.repo.openIssues || 'N/A'}}</p>
+</h2>

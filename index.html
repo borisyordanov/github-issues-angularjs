@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHub Issues</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/icons/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/icons/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/icons/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/icons/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/build/styles/app/github-issue/github-issue.component.css">
+    <link rel="stylesheet" href="/build/styles/app/github-issues-listing/github-issues-listing.component.css">
+    <link rel="stylesheet" href="/build/styles/assets/styles/main.css">
+    <link rel="stylesheet" href="/build/styles/style.css">
+    <!-- endinject -->
+</head>
+
+<body id="wrapper">
+    <h1>GitHub Issues</h1>
+    <ui-view></ui-view>
+    <!-- inject:js -->
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/app/app.module.js"></script>
+    <script src="/app/services/auth.service.js"></script>
+    <script src="/app/services/github.service.js"></script>
+    <script src="/app/models/github-issue.model.js"></script>
+    <script src="/app/models/github-repo.model.js"></script>
+    <script src="/app/app.routes.config.js"></script>
+    <script src="/app/about/about.component.js"></script>
+    <script src="/app/contacts/contacts.component.js"></script>
+    <script src="/app/directives/infinite-scroller.directive.js"></script>
+    <script src="/app/github-app/github-app.component.js"></script>
+    <script src="/app/github-header/github-header.component.js"></script>
+    <script src="/app/github-issue/github-issue.component.js"></script>
+    <script src="/app/github-issues-filter/github-issues-filter.component.js"></script>
+    <script src="/app/github-issues-listing/github-issues-listing.component.js"></script>
+    <script src="/app/github-issues-sort/github-issues-sort.component.js"></script>
+    <script src="/app/github-issues-toolbar/github-issues-toolbar.component.js"></script>
+    <script src="/app/github-repo-select/github-repo-select.component.js"></script>
+    <script src="/app/login/login.component.js"></script>
+    <script src="/app/github-repo-stats/github-repo-stats.component.js"></script>
+    <script src="/app/relative-time/relative-time.component.js"></script>
+    <!-- endinject -->
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+<select ng-model="$ctrl.selectedRepo"
+        ng-change="$ctrl.onRepoSelect({ repo: $ctrl.selectedRepo })"
+        ng-options="repo as repo.name for repo in $ctrl.repos track by repo.id">
+</select>

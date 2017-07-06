@@ -1,0 +1,17 @@
+github-issue {
+    display: block;
+    border: 1px solid gray;
+    padding: 10px 20px;
+}
+
+github-issue .title {
+    float: left;
+}
+
+github-issue .comments-count {
+    float: right;
+}
+
+github-issue .details {
+    clear: both;
+}
